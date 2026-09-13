@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital eBook Store - Master New Skills</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-900 text-white min-h-screen antialiased">
+
+  <!-- Header -->
+  <header class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center border-b border-slate-800">
+    <div class="flex items-center space-x-3">
+      <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center font-black text-xl">📚</div>
+      <span class="font-extrabold text-xl tracking-tight">My eBook Library</span>
+    </div>
+    <div class="text-xs text-slate-400">Practical Knowledge Guides</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="max-w-4xl mx-auto px-4 py-16 text-center space-y-4">
+    <span class="bg-indigo-500/20 text-indigo-300 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full border border-indigo-500/30">Digital Store</span>
+    <h1 class="text-4xl sm:text-5xl font-black tracking-tight">Upgrade Your Skills With Practical eBooks</h1>
+    <p class="text-slate-400 text-base max-w-2xl mx-auto">
+      Simple, plain-English guides designed for beginners and professionals. Choose a book below to start learning.
+    </p>
+  </section>
+
+  <!-- eBook Catalog Grid -->
+  <main class="max-w-6xl mx-auto px-4 pb-24">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- EBOOK CARD 1: AI For Beginners -->
+      <div class="bg-slate-800/80 border border-slate-700/80 rounded-2xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition">
+        <div class="space-y-4">
+          <div class="w-full h-48 bg-gradient-to-br from-indigo-900 to-purple-900 rounded-xl p-6 flex flex-col justify-between text-white shadow-inner">
+            <span class="text-[10px] bg-indigo-500/30 text-indigo-200 px-2.5 py-1 rounded w-fit font-bold uppercase">2026 Edition</span>
+            <div>
+              <h3 class="font-black text-xl leading-snug">AI for Beginners</h3>
+              <p class="text-xs text-indigo-200 mt-1">No Tech Background Required</p>
+            </div>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Learn how to use AI for everyday writing, planning, learning, and daily productivity in plain English.
+          </p>
+        </div>
+        
+        <div class="pt-6 border-t border-slate-700/60 mt-6 flex items-center justify-between">
+          <span class="text-xl font-extrabold text-white">$9.99</span>
+          <!-- लिंक सीधे आपके AI Sales Page पर ले जाएगा -->
+          <a href="ai-for-beginners.html" class="bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition flex items-center gap-1.5">
+            View Details <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- EBOOK CARD 2: Placeholder for Future eBook -->
+      <div class="bg-slate-800/40 border border-slate-800/80 rounded-2xl p-6 flex flex-col justify-between opacity-60">
+        <div class="space-y-4">
+          <div class="w-full h-48 bg-slate-800 rounded-xl p-6 flex items-center justify-center text-slate-500 font-bold text-sm">
+            Coming Soon
+          </div>
+          <h3 class="font-bold text-lg text-slate-400">Excel & Data Dashboards</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            Master data cleaning, formulas, and visual dashboard creation.
+          </p>
+        </div>
+        <div class="pt-6 border-t border-slate-800 mt-6 flex items-center justify-between text-xs text-slate-500">
+          <span>Stay Tuned</span>
+          <span class="bg-slate-800 px-3 py-1 rounded-md">Coming Soon</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="py-8 text-center text-xs text-slate-500 border-t border-slate-800">
+    © 2026 Digital eBook Store. All Rights Reserved.
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>

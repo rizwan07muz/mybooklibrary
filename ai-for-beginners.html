@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI for Beginners - High Converting Sales & Thank You Page</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+  
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+  <!-- ========================================== -->
+  <!-- CONFIGURATION BLOCK                        -->
+  <!-- ========================================== -->
+  <script>
+    const CONFIG = {
+      PAYMENT_CHECKOUT_URL: "paypal.me/mybooklibrary", // Replace with your checkout link
+      EBOOK_DOWNLOAD_URL: "pdf/AIforBeginners.pdf",   // Replace with direct PDF download URL
+      PRODUCT_PRICE: "$9.99",                                         // Replace with your price
+      SUPPORT_EMAIL: "alamr7186@gmail.com",                        // Replace with your support email
+      REFUND_POLICY_TEXT: "Instant digital download. Non-refundable once delivered.",
+      DELIVERY_TEXT: "Instant PDF download delivered immediately after payment."
+    };
+  </script>
+
+  <!-- TOP NOTICE / TOGGLE BAR FOR DEMO --
+  <div class="bg-slate-900 text-white text-xs py-2 px-4 sticky top-0 z-50 flex justify-between items-center shadow-md">
+    <div class="flex items-center space-x-2">
+      <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      <span class="font-medium">Live Funnel Preview Mode</span>
+    </div>
+    <div class="flex space-x-2">
+      <button onclick="showPage('sales')" id="btn-sales" class="px-3 py-1 bg-indigo-600 rounded-md font-semibold text-xs hover:bg-indigo-500 transition">View Sales Page</button>
+      <button onclick="showPage('thankyou')" id="btn-thankyou" class="px-3 py-1 bg-slate-800 rounded-md font-semibold text-xs hover:bg-slate-700 transition">View Thank You Page</button>
+    </div>
+  </div>-->
+
+  <!-- Sticky Mobile CTA Bar -->
+  <div id="mobile-cta" class="fixed bottom-0 left-0 right-0 bg-slate-900/95 backdrop-blur border-t border-slate-800 p-3 z-40 md:hidden flex items-center justify-between shadow-2xl">
+    <div>
+      <div class="text-[10px] text-slate-400 uppercase tracking-wider">AI for Beginners</div>
+      <div class="text-white font-bold text-sm price-display">[YOUR PRICE]</div>
+    </div>
+    <a href="#" class="btn-checkout bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold px-5 py-2.5 rounded-xl shadow-lg flex items-center gap-1.5 transition">
+      <span>GET THIS EBOOK</span>
+      <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+    </a>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 1: SALES PAGE                                                  -->
+  <!-- =================================================================== -->
+  <div id="sales-page" class="block">
+    
+    <!-- Hero Banner Announcement -->
+    <div class="bg-gradient-to-r from-indigo-700 via-purple-700 to-indigo-800 text-white text-center py-2 px-4 text-xs sm:text-sm font-semibold tracking-wide">
+      ⚡ SPECIAL 2026 EDITION RELEASE • Get Instant Access + Exclusive 7-Day AI Starter Challenge!
+    </div>
+
+    <!-- Header / Navbar -->
+    <!-- Header / Navbar with Back to Home Link -->
+    <header class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center border-b border-slate-200">
+      <div class="flex items-center space-x-4">
+        <!-- HOME / BACK BUTTON -->
+        <a href="index.html" class="flex items-center gap-1.5 text-xs font-bold text-slate-600 hover:text-indigo-600 bg-slate-100 hover:bg-indigo-50 px-3 py-2 rounded-xl transition border border-slate-200">
+          <i data-lucide="arrow-left" class="w-4 h-4"></i>
+          <span>All eBooks</span>
+        </a>
+
+        <div class="flex items-center space-x-2 border-l border-slate-200 pl-4">
+          <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-md">AI</div>
+          <span class="font-bold text-lg text-slate-900 tracking-tight hidden sm:inline-block">AI For Beginners</span>
+        </div>
+      </div>
+
+      <a href="#" class="btn-checkout hidden sm:inline-flex items-center gap-1.5 bg-slate-900 text-white px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-slate-800 transition shadow-sm">
+        <span>GET THIS EBOOK</span> <i data-lucide="arrow-right" class="w-4 h-4"></i>
+      </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-6xl mx-auto px-4 pt-12 pb-16 md:pt-20 md:pb-24">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Content -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-200 text-xs sm:text-sm font-semibold">
+            <i data-lucide="sparkles" class="w-4 h-4"></i> No Tech Background Required • Plain English Guide
+          </div>
+          
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.15] tracking-tight">
+            Master AI in Everyday Life — <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Even If You've Never Tried It Before.</span>
+          </h1>
+          
+          <p class="text-lg sm:text-xl text-slate-600 leading-relaxed font-normal max-w-2xl mx-auto lg:mx-0">
+            Stop feeling left behind. Learn how to write emails, plan your day, research faster, and automate everyday tasks using simple, copy-and-paste prompts.
+          </p>
+
+          <!-- Key Highlights Bullet List -->
+          <ul class="space-y-3 text-slate-700 text-left max-w-md mx-auto lg:mx-0 pt-2">
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i>
+              <span><strong>Zero Jargon:</strong> Understand AI without confusing technical terms[cite: 1, 2].</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i>
+              <span><strong>Ready Prompts:</strong> Copy-and-paste templates for daily tasks & work[cite: 1, 2].</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i>
+              <span><strong>7-Day Action Plan:</strong> Build true confidence in just one week[cite: 1, 2].</span>
+            </li>
+          </ul>
+
+          <!-- CTA Buttons -->
+          <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
+            <a href="#" class="btn-checkout w-full sm:w-auto px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-2xl shadow-xl shadow-indigo-200 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-3 text-lg">
+              <i data-lucide="download" class="w-5 h-5"></i>
+              <span>GET THIS EBOOK</span> (<span class="price-display">[YOUR PRICE]</span>)
+            </a>
+          </div>
+          <div class="text-xs text-slate-500 flex items-center gap-1.5 justify-center lg:justify-start pt-1">
+            <i data-lucide="shield-check" class="w-4 h-4 text-emerald-600"></i> Instant PDF Access • Secure Checkout
+          </div>
+        </div>
+
+        <!-- Right Graphic / Book Mockup -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative group max-w-sm w-full">
+            <div class="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition duration-1000"></div>
+            
+            <div class="relative bg-slate-900 rounded-2xl p-8 border border-slate-800 text-white shadow-2xl flex flex-col justify-between min-h-[460px] transform hover:scale-[1.02] transition duration-300">
+              <div class="space-y-4">
+                <div class="inline-block px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-md text-xs font-semibold tracking-wider uppercase">
+                  2026 Edition Guide[cite: 1, 2]
+                </div>
+                <h2 class="text-3xl font-extrabold text-white tracking-tight leading-tight">
+                  AI for Beginners[cite: 1, 2]
+                </h2>
+                <p class="text-indigo-200 text-sm font-medium">
+                  How to Use AI in Everyday Life Even If You've Never Tried It Before[cite: 1, 2]
+                </p>
+                <hr class="border-slate-800 my-4"/>
+                <div class="space-y-2 text-xs text-slate-300">
+                  <div class="flex items-center gap-2"><i data-lucide="book-open" class="w-4 h-4 text-indigo-400"></i> 11 Practical Chapters[cite: 1, 2]</div>
+                  <div class="flex items-center gap-2"><i data-lucide="zap" class="w-4 h-4 text-amber-400"></i> Practical Prompts & Examples[cite: 1, 2]</div>
+                  <div class="flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4 text-emerald-400"></i> 7-Day Starter Challenge[cite: 1, 2]</div>
+                  <div class="flex items-center gap-2"><i data-lucide="file-text" class="w-4 h-4 text-purple-400"></i> Quick-Reference Cheat Sheet[cite: 1, 2]</div>
+                </div>
+              </div>
+
+              <div class="pt-6 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+                <span>Plain-English Guide[cite: 1, 2]</span>
+                <span class="font-semibold text-emerald-400">Instant PDF Access</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Social Proof Bar -->
+    <section class="bg-white py-8 border-y border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 flex flex-wrap justify-around items-center gap-6 text-center text-slate-600 font-medium text-sm">
+        <div>🚀 100% Beginner Friendly</div>
+        <div>📱 Read on Phone, Tablet, or Computer</div>
+        <div>💡 Practical Copy-and-Paste Prompts[cite: 1, 2]</div>
+        <div>🔒 Secure Checkout</div>
+      </div>
+    </section>
+
+    <!-- Problem & Solution Section (Your Favorite Red & Green Contrast Layout) -->
+    <section class="max-w-5xl mx-auto px-4 py-20">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">
+          Does AI feel overwhelming or confusing?[cite: 1, 2]
+        </h2>
+        <p class="text-slate-600 text-lg">
+          If you feel like everyone suddenly knows how to use AI while you're unsure where to click — this book was written specifically for you[cite: 1, 2].
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Problem Box -->
+        <div class="bg-red-50/60 rounded-2xl p-8 border border-red-100">
+          <h3 class="text-xl font-bold text-red-900 mb-4 flex items-center gap-2">
+            <i data-lucide="x-circle" class="w-6 h-6 text-red-600"></i> Without This Guide:
+          </h3>
+          <ul class="space-y-3 text-red-950 text-sm">
+            <li class="flex items-start gap-2">❌ Wasting hours writing emails, letters, or daily reports manually.</li>
+            <li class="flex items-start gap-2">❌ Feeling confused by technical AI jargon, LLMs, and complex setups[cite: 1, 2].</li>
+            <li class="flex items-start gap-2">❌ Getting bad or incorrect answers because you don't know how to prompt correctly[cite: 1, 2].</li>
+            <li class="flex items-start gap-2">❌ Worrying about safety, privacy, and common AI mistakes[cite: 1, 2].</li>
+          </ul>
+        </div>
+
+        <!-- Solution Box -->
+        <div class="bg-emerald-50/60 rounded-2xl p-8 border border-emerald-100">
+          <h3 class="text-xl font-bold text-emerald-900 mb-4 flex items-center gap-2">
+            <i data-lucide="check-circle" class="w-6 h-6 text-emerald-600"></i> With This Guide:
+          </h3>
+          <ul class="space-y-3 text-emerald-950 text-sm">
+            <li class="flex items-start gap-2">✅ Write polished emails, messages, and reports in 30 seconds[cite: 1, 2].</li>
+            <li class="flex items-start gap-2">✅ Choose the exact right AI tool (ChatGPT, Claude, Gemini, Canva) for any task[cite: 1, 2].</li>
+            <li class="flex items-start gap-2">✅ Master the 4-part prompting formula (Context + Task + Format + Tone)[cite: 1, 2].</li>
+            <li class="flex items-start gap-2">✅ Build total confidence with a practical 7-day starter plan[cite: 1, 2].</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- What's Inside (Your Favorite 6-Grid Layout) -->
+    <section class="bg-slate-100 py-20">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-indigo-600 font-bold text-sm uppercase tracking-widest">Table of Contents[cite: 1, 2]</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">
+            What You Will Learn Inside This Guide
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+            <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center font-bold mb-4">01</div>
+            <h3 class="font-bold text-slate-900 text-lg mb-2">Part 1: The Basics[cite: 1, 2]</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Understand AI without confusing jargon[cite: 1, 2]. Meet your AI toolkit (ChatGPT, Claude, Gemini, Perplexity) and learn which one to choose[cite: 1, 2].
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+            <div class="w-10 h-10 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center font-bold mb-4">02</div>
+            <h3 class="font-bold text-slate-900 text-lg mb-2">Part 2: Daily Life & Work[cite: 1, 2]</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Use AI for writing emails[cite: 1, 2], planning meals[cite: 1, 2], managing budgets[cite: 1, 2], learning new skills[cite: 1, 2], organizing schedules[cite: 1, 2], and work productivity[cite: 1, 2].
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+            <div class="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center font-bold mb-4">03</div>
+            <h3 class="font-bold text-slate-900 text-lg mb-2">Part 3: Master Prompting[cite: 1, 2]</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Learn the 4-part prompt formula (Context + Task + Format + Tone)[cite: 1, 2]. Protect your privacy and spot AI hallucinations easily[cite: 1, 2].
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+            <div class="w-10 h-10 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center font-bold mb-4">04</div>
+            <h3 class="font-bold text-slate-900 text-lg mb-2">7-Day Starter Challenge[cite: 1, 2]</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              A step-by-step 7-day action plan that takes you from total novice to confident AI user with simple 5-minute daily tasks[cite: 1, 2].
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+            <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-bold mb-4">05</div>
+            <h3 class="font-bold text-slate-900 text-lg mb-2">Creativity & Design[cite: 1, 2]</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Generate images from text descriptions[cite: 1, 2], design social posts with Canva AI[cite: 1, 2], and turn raw ideas into structured presentations[cite: 1, 2].
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+            <div class="w-10 h-10 bg-rose-100 text-rose-600 rounded-xl flex items-center justify-center font-bold mb-4">06</div>
+            <h3 class="font-bold text-slate-900 text-lg mb-2">Quick Reference Cheat Sheet[cite: 1, 2]</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Handy reference guides and prompt formulas you can print out or keep on your desktop for quick everyday lookup[cite: 1, 2].
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing / Offer Section -->
+    <section id="pricing" class="max-w-4xl mx-auto px-4 py-20">
+      <div class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden text-center border border-slate-800">
+        <div class="relative z-10">
+          <span class="bg-indigo-500/30 text-indigo-300 text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full border border-indigo-400/30 inline-block mb-4">Limited Time Offer</span>
+          
+          <h2 class="text-3xl sm:text-5xl font-extrabold mb-4">Start Using AI Like a Pro Today</h2>
+          <p class="text-slate-300 max-w-xl mx-auto mb-8 text-base sm:text-lg">
+            Download the complete PDF guide immediately after payment and get instant access on any device.
+          </p>
+
+          <div class="my-8 flex justify-center items-baseline gap-3">
+            <span class="text-5xl sm:text-6xl font-extrabold text-white price-display">[YOUR PRICE]</span>
+            <span class="text-emerald-400 text-sm font-semibold">ONE-TIME PAYMENT</span>
+          </div>
+
+          <a href="#" class="btn-checkout inline-flex items-center justify-center gap-3 w-full sm:w-auto px-10 py-5 bg-indigo-600 hover:bg-indigo-500 text-white font-extrabold rounded-2xl text-xl shadow-lg transition transform hover:scale-105">
+            <i data-lucide="shopping-cart" class="w-6 h-6"></i>
+            <span>GET THIS EBOOK</span>
+          </a>
+
+          <div class="mt-8 pt-8 border-t border-slate-800 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs text-slate-400">
+            <div class="flex items-center justify-center gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Instant PDF Download</div>
+            <div class="flex items-center justify-center gap-1.5"><i data-lucide="lock" class="w-4 h-4 text-indigo-400"></i> Secure 256-bit Encryption</div>
+            <div class="flex items-center justify-center gap-1.5"><i data-lucide="refresh-cw" class="w-4 h-4 text-purple-400"></i> Lifetime Access</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section (Your Favorite Card Style) -->
+    <section class="max-w-3xl mx-auto px-4 py-16">
+      <h2 class="text-3xl font-extrabold text-center text-slate-900 mb-10">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        
+        <div class="bg-white p-6 rounded-xl border border-slate-200">
+          <h3 class="font-bold text-slate-900 text-lg">Do I need a technical background or coding skills?[cite: 1, 2]</h3>
+          <p class="text-slate-600 text-sm mt-2">No, absolutely not. This book is specifically written for complete beginners in plain English[cite: 1, 2]. All you need is a phone or computer with internet access[cite: 1, 2].</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-slate-200">
+          <h3 class="font-bold text-slate-900 text-lg">How will I receive the eBook after payment?</h3>
+          <p class="text-slate-600 text-sm mt-2">Immediately after completing the payment, you will be redirected to the Download Thank You Page where you can download your PDF with one click.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-slate-200">
+          <h3 class="font-bold text-slate-900 text-lg">Can I read this on my phone or tablet?</h3>
+          <p class="text-slate-600 text-sm mt-2">Yes! The book is provided in standard PDF format, which works seamlessly on iPhones, Android phones, iPads, Mac, and Windows computers.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-slate-200">
+          <h3 class="font-bold text-slate-900 text-lg">What is the refund policy?</h3>
+          <p class="text-slate-600 text-sm mt-2"><span class="refund-policy-text">[ADD YOUR REFUND POLICY HERE]</span></p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-10 text-center text-xs border-t border-slate-800">
+      <p>© 2026 AI for Beginners. All Rights Reserved.</p>
+      <p class="mt-1">Support Email: <span class="support-email">[YOUR SUPPORT EMAIL]</span></p>
+    </footer>
+
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 2: THANK YOU / DOWNLOAD PAGE (Shown after Payment)            -->
+  <!-- =================================================================== -->
+  <!-- PAGE 2: THANK YOU / DOWNLOAD PAGE -->
+    <div id="thankyou-page" class="hidden min-h-screen bg-slate-900 text-white flex flex-col justify-between">
+      
+      <!-- Header with Home Link -->
+      <header class="max-w-5xl mx-auto px-4 py-8 w-full flex justify-between items-center">
+        <a href="index.html" class="flex items-center gap-1.5 text-xs font-bold text-slate-300 hover:text-white bg-slate-800 px-3.5 py-2 rounded-xl transition border border-slate-700">
+          <i data-lucide="arrow-left" class="w-4 h-4"></i>
+          <span>Back to Store</span>
+        </a>
+        <span class="text-xs text-emerald-400 bg-emerald-950 px-3 py-1 rounded-full border border-emerald-800">Payment Successful</span>
+      </header>
+
+      <!-- Main Content -->
+      <main class="max-w-2xl mx-auto px-4 py-12 text-center w-full my-auto">
+        <div class="bg-slate-800/80 border border-slate-700/80 rounded-3xl p-8 sm:p-12 shadow-2xl space-y-6">
+          
+          <div class="w-20 h-20 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto border border-emerald-500/40">
+            <i data-lucide="check-circle-2" class="w-12 h-12"></i>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-white">Payment Successful!</h1>
+          <p class="text-slate-300 text-base">
+            Thank you for your purchase. Your eBook <strong class="text-white">"AI for Beginners (2026 Edition)"</strong> is ready below.
+          </p>
+
+          <!-- DOWNLOAD BUTTON -->
+          <div class="pt-4 pb-2">
+            <a href="#" id="btn-download" download class="inline-flex items-center justify-center gap-3 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold px-8 py-5 rounded-2xl text-lg shadow-xl shadow-emerald-900/30 transition transform hover:scale-105 w-full sm:w-auto">
+              <i data-lucide="download-cloud" class="w-6 h-6"></i>
+              <span>DOWNLOAD YOUR EBOOK</span>
+            </a>
+          </div>
+
+          <p class="text-xs text-slate-400">
+            📩 Need help? Contact support: <a href="" id="support-link" class="text-indigo-400 underline font-medium"></a>
+          </p>
+
+          <hr class="border-slate-700/60 my-6"/>
+
+          <!-- Navigation Option to Main Store -->
+          <div class="pt-2">
+            <a href="index.html" class="inline-flex items-center gap-2 text-xs font-semibold text-slate-400 hover:text-indigo-300 transition">
+              <span>Explore More eBooks in Store</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+
+        </div>
+      </main>
+
+      <footer class="py-6 text-center text-xs text-slate-500">
+        © 2026 Digital eBook Store. All Rights Reserved.
+      </footer>
+    </div>
+
+  <!-- JavaScript logic to toggle pages & apply config -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      lucide.createIcons();
+
+      // Apply Config Values to Links
+      document.querySelectorAll('.btn-checkout').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          if(CONFIG.PAYMENT_CHECKOUT_URL.includes("YOUR_PAYMENT_GATEWAY")) {
+            e.preventDefault();
+            alert("Payment Gateway Triggered!\n\n(Simulating redirect to Thank You page...)");
+            showPage('thankyou');
+          } else {
+            btn.href = CONFIG.PAYMENT_CHECKOUT_URL;
+          }
+        });
+      });
+
+      document.querySelectorAll('.price-display').forEach(el => el.textContent = CONFIG.PRODUCT_PRICE);
+      document.querySelectorAll('.support-email').forEach(el => el.textContent = CONFIG.SUPPORT_EMAIL);
+      document.querySelectorAll('.refund-policy-text').forEach(el => el.textContent = CONFIG.REFUND_POLICY_TEXT);
+      
+      const downloadBtn = document.getElementById('btn-download');
+      if (downloadBtn) downloadBtn.href = CONFIG.EBOOK_DOWNLOAD_URL;
+
+      const supportLink = document.getElementById('support-link');
+      if (supportLink) {
+        supportLink.href = "mailto:" + CONFIG.SUPPORT_EMAIL;
+        supportLink.textContent = CONFIG.SUPPORT_EMAIL;
+      }
+    });
+
+    // Toggle between pages for preview
+    function showPage(page) {
+      const sales = document.getElementById('sales-page');
+      const thankYou = document.getElementById('thankyou-page');
+      const btnSales = document.getElementById('btn-sales');
+      const btnThankYou = document.getElementById('btn-thankyou');
+      const mobileCta = document.getElementById('mobile-cta');
+
+      if (page === 'sales') {
+        sales.classList.remove('hidden');
+        thankYou.classList.add('hidden');
+        mobileCta.classList.remove('hidden');
+        btnSales.className = "px-3 py-1 bg-indigo-600 rounded-md font-semibold text-xs hover:bg-indigo-500 transition";
+        btnThankYou.className = "px-3 py-1 bg-slate-800 rounded-md font-semibold text-xs hover:bg-slate-700 transition";
+        window.scrollTo(0,0);
+      } else {
+        sales.classList.add('hidden');
+        thankYou.classList.remove('hidden');
+        mobileCta.classList.add('hidden');
+        btnThankYou.className = "px-3 py-1 bg-indigo-600 rounded-md font-semibold text-xs hover:bg-indigo-500 transition";
+        btnSales.className = "px-3 py-1 bg-slate-800 rounded-md font-semibold text-xs hover:bg-slate-700 transition";
+        window.scrollTo(0,0);
+      }
+    }
+  </script>
+</body>
+</html>
