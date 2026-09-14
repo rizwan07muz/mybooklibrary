@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Start a YouTube Channel Using AI (2026 Edition)</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased relative">
+
+  <!-- ========================================== -->
+  <!-- CONFIGURATION BLOCK                        -->
+  <!-- ========================================== -->
+  <script>
+    const CONFIG = {
+      PAYPAL_URL: "https://paypal.me/mybooklibrary/2.99USD", 
+      UPI_ID: "alamr7186@okhdfcbank", // अपनी असली UPI ID डालें
+      QR_CODE_IMAGE_PATH: "images/GooglePay_QR.png", // अपने QR कोड की इमेज का लिंक या पाथ डालें
+      WHATSAPP_NUMBER: "9525022079", // अपना WhatsApp बिजनेस नंबर कंट्री कोड के साथ डालें
+      WHATSAPP_MESSAGE: "Hello! I have completed the payment for the YouTube AI eBook. Here is my payment screenshot. Please send me the eBook PDF.",
+      EBOOK_DOWNLOAD_URL: "pdf/youtube-ai-ebook.pdf",
+      PRICE_USD: "$2.99",
+      PRICE_INR: "₹199",
+      SUPPORT_EMAIL: "alamr7186@gmail.com",
+      REFUND_POLICY_TEXT: "Instant digital download via WhatsApp/Email upon payment verification."
+    };
+  </script>
+
+  <!-- Sticky Mobile CTA Bar -->
+  <div id="mobile-cta" class="fixed bottom-0 left-0 right-0 bg-slate-900/95 backdrop-blur border-t border-slate-800 p-3 z-40 md:hidden flex items-center justify-between shadow-2xl">
+    <div>
+      <div class="text-[10px] text-slate-400 uppercase tracking-wider">YouTube AI Guide</div>
+      <div class="text-white font-bold text-sm">$2.99 / ₹199</div>
+    </div>
+    <button onclick="openPaymentModal()" class="bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold px-5 py-2.5 rounded-xl shadow-lg flex items-center gap-1.5 transition">
+      <span>BUY EBOOK</span>
+      <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+    </button>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- SALES PAGE                                                          -->
+  <!-- =================================================================== -->
+  <div id="sales-page" class="block pb-16 md:pb-0">
+    
+    <!-- Hero Banner Announcement -->
+    <div class="bg-gradient-to-r from-indigo-700 via-purple-700 to-indigo-800 text-white text-center py-2 px-4 text-xs sm:text-sm font-semibold tracking-wide">
+      ⚡ SPECIAL 2026 EDITION RELEASE • Get Instant Access + Exclusive 7-Day Channel Launch Challenge!
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center border-b border-slate-200">
+      <div class="flex items-center space-x-4">
+        <a href="index.html" class="flex items-center gap-1.5 text-xs font-bold text-slate-600 hover:text-indigo-600 bg-slate-100 hover:bg-indigo-50 px-3 py-2 rounded-xl transition border border-slate-200">
+          <i data-lucide="arrow-left" class="w-4 h-4"></i>
+          <span>All eBooks</span>
+        </a>
+
+        <div class="flex items-center space-x-2 border-l border-slate-200 pl-4">
+          <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-md">YT</div>
+          <span class="font-bold text-lg text-slate-900 tracking-tight hidden sm:inline-block">YouTube AI Roadmap</span>
+        </div>
+      </div>
+
+      <button onclick="openPaymentModal()" class="hidden sm:inline-flex items-center gap-1.5 bg-slate-900 text-white px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-slate-800 transition shadow-sm">
+        <span>GET THIS EBOOK</span> <i data-lucide="arrow-right" class="w-4 h-4"></i>
+      </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-6xl mx-auto px-4 pt-12 pb-16 md:pt-20 md:pb-24">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Content -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-200 text-xs sm:text-sm font-semibold">
+            <i data-lucide="sparkles" class="w-4 h-4"></i> No Filming or Editing Experience Required • Plain English Guide
+          </div>
+          
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.15] tracking-tight">
+            How to Start a YouTube Channel Using AI — <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Even With Zero Experience.</span>
+          </h1>
+          
+          <p class="text-lg sm:text-xl text-slate-600 leading-relaxed font-normal max-w-2xl mx-auto lg:mx-0">
+            A beginner's roadmap to planning, creating, and growing a high-performing channel in 2026 without expensive cameras, voice anxiety, or technical editing skills.
+          </p>
+
+          <ul class="space-y-3 text-slate-700 text-left max-w-md mx-auto lg:mx-0 pt-2">
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i>
+              <span><strong>No Camera Needed:</strong> Create faceless videos using AI voiceovers & presenters.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i>
+              <span><strong>Ready AI Prompts:</strong> Copy-and-paste prompts for niches, scripts, & SEO titles.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i>
+              <span><strong>7-Day Channel Launch:</strong> Step-by-step action plan to publish your 1st video.</span>
+            </li>
+          </ul>
+
+          <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
+            <button onclick="openPaymentModal()" class="w-full sm:w-auto px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-2xl shadow-xl shadow-indigo-200 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-3 text-lg">
+              <i data-lucide="download" class="w-5 h-5"></i>
+              <span>GET EBOOK ($2.99 / ₹199)</span>
+            </button>
+            <div class="text-xs text-slate-500 flex items-center gap-1.5">
+              <i data-lucide="shield-check" class="w-4 h-4 text-emerald-600"></i>
+              Instant PDF Access
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Graphic / Book Mockup Card -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-md bg-gradient-to-br from-slate-900 to-indigo-950 rounded-3xl p-8 text-white shadow-2xl border border-slate-800">
+            <div class="absolute -top-3 -right-3 bg-amber-400 text-slate-950 text-xs font-black uppercase px-4 py-1.5 rounded-full shadow-lg">
+              2026 Edition
+            </div>
+            
+            <div class="space-y-6">
+              <div class="w-12 h-12 bg-indigo-500/20 border border-indigo-400/30 rounded-2xl flex items-center justify-center text-indigo-400">
+                <i data-lucide="video" class="w-6 h-6"></i>
+              </div>
+              
+              <div>
+                <span class="text-xs font-bold text-indigo-400 uppercase tracking-widest">A Plain-English Guide</span>
+                <h2 class="text-3xl font-extrabold tracking-tight mt-1">How to Start a YouTube Channel Using AI</h2>
+                <p class="text-slate-400 text-sm mt-2">A Beginner's Roadmap to Planning, Creating & Growing a Channel.</p>
+              </div>
+
+              <div class="pt-4 border-t border-slate-800/80 space-y-3">
+                <div class="flex items-center justify-between text-xs text-slate-300">
+                  <span>Format:</span>
+                  <span class="font-semibold text-white">PDF (Universal Download)</span>
+                </div>
+                <div class="flex items-center justify-between text-xs text-slate-300">
+                  <span>Chapters:</span>
+                  <span class="font-semibold text-white">11 Complete Chapters</span>
+                </div>
+                <div class="flex items-center justify-between text-xs text-slate-300">
+                  <span>Includes:</span>
+                  <span class="font-semibold text-indigo-300">Prompts + Toolkit Cheat Sheet</span>
+                </div>
+              </div>
+
+              <div class="pt-2">
+                <button onclick="openPaymentModal()" class="w-full py-3 bg-white hover:bg-slate-100 text-slate-950 font-bold rounded-xl text-sm transition text-center shadow">
+                  Download Copy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Quick Overview Stats -->
+    <section class="border-y border-slate-200 bg-white py-10">
+      <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div>
+          <div class="text-3xl font-black text-slate-900">11</div>
+          <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Practical Chapters</div>
+        </div>
+        <div>
+          <div class="text-3xl font-black text-slate-900">0</div>
+          <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Tech Jargon</div>
+        </div>
+        <div>
+          <div class="text-3xl font-black text-slate-900">7-Day</div>
+          <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Launch Plan</div>
+        </div>
+        <div>
+          <div class="text-3xl font-black text-slate-900">100%</div>
+          <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Beginner Friendly</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Features / Chapters Section -->
+    <section class="max-w-6xl mx-auto px-4 py-20 space-y-16">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-4">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Everything Covered Inside The eBook</h2>
+        <p class="text-slate-600 text-base">Step-by-step guidance designed specifically for complete beginners who want clear, action-oriented instructions without overwhelming technical detail.</p>
+      </div>
+
+      <!-- Feature Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+          <div class="w-12 h-12 bg-indigo-50 border border-indigo-100 rounded-2xl flex items-center justify-center text-indigo-600">
+            <i data-lucide="target" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-xl text-slate-900">Niche Selection & Validation</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Discover how to choose profitable, low-competition video topics using vidIQ, TubeBuddy, and targeted AI research prompts before creating a single video.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+          <div class="w-12 h-12 bg-purple-50 border border-purple-100 rounded-2xl flex items-center justify-center text-purple-600">
+            <i data-lucide="file-text" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-xl text-slate-900">AI Scripting & Storytelling</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Master ChatGPT & Claude prompts that structure high-retention video scripts with strong hooks, logical flow, and natural, engaging language.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+          <div class="w-12 h-12 bg-emerald-50 border border-emerald-100 rounded-2xl flex items-center justify-center text-emerald-600">
+            <i data-lucide="mic" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-xl text-slate-900">Faceless Video Production</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Learn how to leverage ElevenLabs for natural AI voiceovers and CapCut/Submagic for auto-captions, visual overlays, and effortless editing.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Detailed Table of Contents / Chapters breakdown -->
+      <div class="bg-white rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-sm space-y-8">
+        <div class="border-b border-slate-100 pb-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <div>
+            <h3 class="text-2xl font-bold text-slate-900">Table of Contents Overview</h3>
+            <p class="text-xs text-slate-500 mt-1">11 actionable, straightforward chapters designed for quick execution.</p>
+          </div>
+          <span class="bg-slate-100 text-slate-700 text-xs font-bold px-3 py-1.5 rounded-xl border border-slate-200">PDF Format • 2026 Edition</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+          <div class="flex items-start gap-4 pb-4 border-b border-slate-100">
+            <span class="text-xs font-black bg-indigo-100 text-indigo-700 w-7 h-7 rounded-lg flex items-center justify-center shrink-0">01</span>
+            <div>
+              <h4 class="font-bold text-slate-900 text-sm">Introduction to AI-Powered YouTube Channels</h4>
+              <p class="text-xs text-slate-500 mt-0.5">Understanding how modern AI tools streamline content creation without sacrificing quality.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 pb-4 border-b border-slate-100">
+            <span class="text-xs font-black bg-indigo-100 text-indigo-700 w-7 h-7 rounded-lg flex items-center justify-center shrink-0">02</span>
+            <div>
+              <h4 class="font-bold text-slate-900 text-sm">Choosing Your Niche & Audience</h4>
+              <p class="text-xs text-slate-500 mt-0.5">Identifying high-demand, beginner-friendly niches with proven viewer interest.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 pb-4 border-b border-slate-100">
+            <span class="text-xs font-black bg-indigo-100 text-indigo-700 w-7 h-7 rounded-lg flex items-center justify-center shrink-0">03</span>
+            <div>
+              <h4 class="font-bold text-slate-900 text-sm">Validating Demand Before You Create</h4>
+              <p class="text-xs text-slate-500 mt-0.5">Using simple metrics and search tools to ensure people want to watch your content.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 pb-4 border-b border-slate-100">
+            <span class="text-xs font-black bg-indigo-100 text-indigo-700 w-7 h-7 rounded-lg flex items-center justify-center shrink-0">04</span>
+            <div>
+              <h4 class="font-bold text-slate-900 text-sm">Writing High-Retention Scripts with AI</h4>
+              <p class="text-xs text-slate-500 mt-0.5">Exact ChatGPT & Claude prompts to write compelling 8-minute or Short-form scripts.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 pb-4 border-b border-slate-100">
+            <span class="text-xs font-black bg-indigo-100 text-indigo-700 w-7 h-7 rounded-lg flex items-center justify-center shrink-0">05</span>
+            <div>
+              <h4 class="font-bold text-slate-900 text-sm">Generating Realistic AI Voiceovers</h4>
+              <p class="text-xs text-slate-500 mt-0.5">Setting up realistic, clear AI audio with ElevenLabs without robotic tones.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 pb-4 border-b border-slate-100">
+            <span class="text-xs font-black bg-indigo-100 text-indigo-700 w-7 h-7 rounded-lg flex items-center justify-center shrink-0">06</span>
+            <div>
+              <h4 class="font-bold text-slate-900 text-sm">Creating Faceless Visuals & Avatar Videos</h4>
+              <p class="text-xs text-slate-500 mt-0.5">Leveraging stock footage, Midjourney visuals, HeyGen, or D-ID avatars.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 pb-4 border-b border-slate-100">
+            <span class="text-xs font-black bg-indigo-100 text-indigo-700 w-7 h-7 rounded-lg flex items-center justify-center shrink-0">07</span>
+            <div>
+              <h4 class="font-bold text-slate-900 text-sm">Streamlined Editing Workflow</h4>
+              <p class="text-xs text-slate-500 mt-0.5">Using CapCut and Submagic for quick cuts, auto-captions, and sound effects.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 pb-4 border-b border-slate-100">
+            <span class="text-xs font-black bg-indigo-100 text-indigo-700 w-7 h-7 rounded-lg flex items-center justify-center shrink-0">08</span>
+            <div>
+              <h4 class="font-bold text-slate-900 text-sm">Thumbnails & Click-Through Optimization</h4>
+              <p class="text-xs text-slate-500 mt-0.5">Designing high-CTR thumbnails using Canva & AI image generation.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 pb-4 border-b border-slate-100">
+            <span class="text-xs font-black bg-indigo-100 text-indigo-700 w-7 h-7 rounded-lg flex items-center justify-center shrink-0">09</span>
+            <div>
+              <h4 class="font-bold text-slate-900 text-sm">YouTube SEO & Publishing Strategy</h4>
+              <p class="text-xs text-slate-500 mt-0.5">Writing optimized titles, descriptions, and tags for algorithmic discoverability.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 pb-4 border-b border-slate-100">
+            <span class="text-xs font-black bg-indigo-100 text-indigo-700 w-7 h-7 rounded-lg flex items-center justify-center shrink-0">10</span>
+            <div>
+              <h4 class="font-bold text-slate-900 text-sm">Channel Monetization Beyond AdSense</h4>
+              <p class="text-xs text-slate-500 mt-0.5">Monetizing early through digital downloads, sponsorships, and affiliate links.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 col-span-1 md:col-span-2">
+            <span class="text-xs font-black bg-emerald-100 text-emerald-800 w-7 h-7 rounded-lg flex items-center justify-center shrink-0">11</span>
+            <div>
+              <h4 class="font-bold text-slate-900 text-sm">Bonus: The 7-Day Channel Launch Challenge</h4>
+              <p class="text-xs text-slate-500 mt-0.5">A day-by-day checklist to go from zero to publishing your very first AI video in one week.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Pricing & Offer CTA Section -->
+    <section id="pricing" class="max-w-4xl mx-auto px-4 py-16">
+      <div class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 rounded-3xl p-8 sm:p-12 text-white shadow-2xl text-center border border-slate-800">
+        <span class="bg-indigo-500/30 text-indigo-300 text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full border border-indigo-400/30 inline-block mb-4">Special Launch Pricing</span>
+        
+        <h2 class="text-3xl sm:text-5xl font-extrabold mb-4">Launch Your Channel This Week</h2>
+        <p class="text-slate-300 max-w-xl mx-auto mb-8 text-base">
+          Scan QR Code or pay via PayPal to get instant eBook PDF delivery right on your WhatsApp or Email!
+        </p>
+
+        <div class="my-8 flex justify-center items-center gap-6">
+          <div class="bg-slate-800/80 p-4 rounded-2xl border border-slate-700">
+            <span class="text-xs text-slate-400 block uppercase font-bold mb-1">India Users</span>
+            <span class="text-3xl font-extrabold text-emerald-400">₹199</span>
+          </div>
+          <div class="bg-slate-800/80 p-4 rounded-2xl border border-slate-700">
+            <span class="text-xs text-slate-400 block uppercase font-bold mb-1">International</span>
+            <span class="text-3xl font-extrabold text-indigo-400">$2.99</span>
+          </div>
+        </div>
+
+        <button onclick="openPaymentModal()" class="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-10 py-5 bg-indigo-600 hover:bg-indigo-500 text-white font-extrabold rounded-2xl text-xl shadow-lg transition transform hover:scale-105">
+          <i data-lucide="shopping-cart" class="w-6 h-6"></i>
+          <span>BUY EBOOK NOW</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 py-8 bg-white text-center text-xs text-slate-500 space-y-2">
+      <p>© 2026 How to Start a YouTube Channel Using AI. All Rights Reserved.</p>
+      <p>Support Email: <a id="footer-support-email" href="#" class="text-indigo-600 underline"></a></p>
+    </footer>
+
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAYMENT MODAL WITH QR CODE & WHATSAPP                               -->
+  <!-- =================================================================== -->
+  <div id="payment-modal" class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl relative border border-slate-100 space-y-6 max-h-[92vh] overflow-y-auto">
+      
+      <!-- Close Button -->
+      <button onclick="closePaymentModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-600 p-1 rounded-full hover:bg-slate-100 transition">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <div>
+        <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Secure Payment</span>
+        <h3 class="text-2xl font-extrabold text-slate-900 mt-0.5">Select Payment Method</h3>
+        <p class="text-xs text-slate-500 mt-1">Scan QR Code or use PayPal to complete your purchase.</p>
+      </div>
+
+      <!-- Payment Options -->
+      <div class="space-y-5">
+        
+        <!-- OPTION 1: UPI / QR CODE -->
+        <div class="border-2 border-indigo-500/20 bg-indigo-50/30 rounded-2xl p-4 space-y-3">
+          <div class="flex justify-between items-center">
+            <span class="font-bold text-slate-900 text-sm flex items-center gap-1.5">
+              <i data-lucide="qr-code" class="w-4 h-4 text-indigo-600"></i> Scan QR Code (GPay / PhonePe / Paytm)
+            </span>
+            <span class="font-extrabold text-emerald-600 text-sm" id="modal-inr-price">₹199</span>
+          </div>
+
+          <!-- QR Code Image Holder -->
+          <div class="flex flex-col items-center justify-center bg-white p-3 rounded-xl border border-slate-200 shadow-sm">
+            <img id="qr-code-img" src="" alt="Payment QR Code" class="w-44 h-44 object-contain rounded-lg border border-slate-100">
+            <p class="text-[11px] text-slate-500 mt-2 text-center font-medium">Scan with any UPI App to Pay</p>
+          </div>
+
+          <!-- UPI ID Copy Box -->
+          <div class="flex items-center gap-2 bg-white border border-slate-200 rounded-xl p-2">
+            <input type="text" id="upi-id-input" readonly class="text-xs font-mono font-bold text-slate-800 bg-transparent flex-1 outline-none px-1">
+            <button onclick="copyUpiId()" class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold px-3 py-1.5 rounded-lg transition">
+              Copy UPI
+            </button>
+          </div>
+
+          <!-- WhatsApp Action Button -->
+          <a id="whatsapp-btn" href="#" target="_blank" class="w-full py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl text-xs flex items-center justify-center gap-2 shadow-md transition">
+            <i data-lucide="message-square" class="w-4 h-4"></i>
+            <span>Send Payment Screenshot on WhatsApp</span>
+          </a>
+          <p class="text-[10px] text-slate-400 text-center">Your eBook PDF will be delivered automatically on WhatsApp upon sending screenshot.</p>
+        </div>
+
+        <!-- OPTION 2: PayPal / USD -->
+        <div class="border border-slate-200 rounded-2xl p-4 hover:border-indigo-500 transition space-y-3 bg-slate-50/50">
+          <div class="flex justify-between items-center">
+            <span class="font-bold text-slate-900 text-sm flex items-center gap-2">
+              <i data-lucide="globe" class="w-4 h-4 text-blue-600"></i> International (PayPal)
+            </span>
+            <span class="font-bold text-blue-600 text-sm" id="modal-usd-price">$2.99</span>
+          </div>
+          <p class="text-xs text-slate-500">Pay via Credit Card, Debit Card, or PayPal.</p>
+          <a id="paypal-btn" href="#" target="_blank" onclick="handlePaypalClick()" class="w-full py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl text-xs flex items-center justify-center gap-2 shadow transition">
+            <span>Pay with PayPal</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Email Support Alternative -->
+      <div class="text-[11px] text-slate-500 text-center leading-relaxed pt-3 border-t border-slate-100 space-y-1">
+        <p>Facing issues? Email screenshot to: <a id="modal-support-email" href="#" class="text-indigo-600 font-bold underline"></a></p>
+        <p id="refund-policy-display" class="text-slate-400 text-[10px]"></p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JavaScript Scripting -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      lucide.createIcons();
+
+      // Load config variables
+      document.getElementById('modal-usd-price').innerText = CONFIG.PRICE_USD;
+      document.getElementById('modal-inr-price').innerText = CONFIG.PRICE_INR;
+      document.getElementById('upi-id-input').value = CONFIG.UPI_ID;
+      document.getElementById('paypal-btn').href = CONFIG.PAYPAL_URL;
+      document.getElementById('qr-code-img').src = CONFIG.QR_CODE_IMAGE_PATH;
+      document.getElementById('refund-policy-display').innerText = CONFIG.REFUND_POLICY_TEXT;
+      
+      // WhatsApp Link Configuration
+      const encodedMsg = encodeURIComponent(CONFIG.WHATSAPP_MESSAGE);
+      const waUrl = `https://wa.me/${CONFIG.WHATSAPP_NUMBER}?text=${encodedMsg}`;
+      document.getElementById('whatsapp-btn').href = waUrl;
+
+      // Email links
+      const supportEmailElem = document.getElementById('footer-support-email');
+      const modalSupportEmailElem = document.getElementById('modal-support-email');
+      
+      supportEmailElem.innerText = CONFIG.SUPPORT_EMAIL;
+      supportEmailElem.href = "mailto:" + CONFIG.SUPPORT_EMAIL;
+      
+      modalSupportEmailElem.innerText = CONFIG.SUPPORT_EMAIL;
+      modalSupportEmailElem.href = "mailto:" + CONFIG.SUPPORT_EMAIL;
+    });
+
+    function openPaymentModal() {
+      document.getElementById('payment-modal').classList.remove('hidden');
+    }
+
+    function closePaymentModal() {
+      document.getElementById('payment-modal').classList.add('hidden');
+    }
+
+    function copyUpiId() {
+      const upiInput = document.getElementById('upi-id-input');
+      upiInput.select();
+      navigator.clipboard.writeText(upiInput.value);
+      alert("UPI ID copied to clipboard!");
+    }
+
+    function handlePaypalClick() {
+      alert("After PayPal payment, please check your email or WhatsApp support for PDF delivery!");
+    }
+  </script>
+
+</body>
+</html>
